@@ -1,0 +1,14 @@
+.card {
+  background-color: rgb(107, 161, 207);
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  box-sizing: 0 0 10px 0 #eee;
+  padding: 15px 0 10px 0;
+}
+.cardBox {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  justify-content: space-between;
+}
