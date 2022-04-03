@@ -3,15 +3,22 @@ import "./countryFilter.css";
 const CountryFilter = (props) => {
   return (
     <div>
-      <select onChange={props.onchange}>
-        <option value="worldwide">Worldwide</option>
-        {props.item.Countries &&
-          props.item.Countries.map((country) => (
-            <option key={country.ID} value={country.Country}>
-              {country.Country}
-            </option>
-          ))}
-      </select>
+      <div className="filter-dropdown">
+        <input
+          list="countryInput"
+          onChange={props.onchange}
+          placeholder="Search Country"
+        />
+        <datalist id="countryInput">
+          <option value="Worldwide">World Wide</option>
+          {props.item.Countries &&
+            props.item.Countries.map((country) => (
+              <option key={country.ID} value={country.Country}>
+                {country.Country}
+              </option>
+            ))}
+        </datalist>
+      </div>
     </div>
   );
 };

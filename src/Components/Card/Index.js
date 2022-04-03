@@ -1,27 +1,30 @@
-import CardItem from "./cardItem";
 import "./card.css";
 
 const Card = (props) => {
-  const { newConfirmed, newDeath, newRecovered, country } = props;
+  const { totalConfirmed, totalDeath, totalRecovered, activeCases } = props;
   return (
     <div>
-      <h2>{country === "" ? "WorldWideReport" : country}</h2>
       <div className="cardBox">
-        <CardItem>
-          <h2>New Confirmed</h2>
-          <br />
-          <span>{newConfirmed}</span>
-        </CardItem>
-        <CardItem>
-          <h2>New Death</h2>
-          <br />
-          <span>{newDeath}</span>
-        </CardItem>
-        <CardItem>
-          <h2>New Recovered</h2>
-          <br />
-          <span>{newRecovered}</span>
-        </CardItem>
+        <div className="top-card">
+          <div className="card" id="first-card">
+            <p>Total Confirmed</p>
+            <h2>{totalConfirmed}</h2>
+          </div>
+          <div className="card" id="second-card">
+            <p>Active Cases</p>
+            <h2>{activeCases}</h2>
+          </div>
+        </div>
+        <div className="bottom-card">
+          <div className="card" id="third-card">
+            <p>Total Death</p>
+            <h2>{totalDeath}</h2>
+          </div>
+          <div className="card" id="fourth-card">
+            <p>Total Recovered</p>
+            <h2>{totalRecovered}</h2>
+          </div>
+        </div>
       </div>
     </div>
   );

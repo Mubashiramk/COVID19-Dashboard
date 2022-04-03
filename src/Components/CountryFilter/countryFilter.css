@@ -1,5 +1,13 @@
-.countryfilter {
-  width: 150px;
-  height: 50px;
-  background-color: bisque;
+select,
+Input {
+  width: 160px;
+  height: 45px;
+  border-radius: 20px;
+  border: 0ch;
+  box-shadow: 5px 5px 10px #e1dcdc;
+  align-items: center;
+  text-align: center;
+}
+select:focus {
+  outline: none;
 }

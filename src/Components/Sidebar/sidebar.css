@@ -1,0 +1,20 @@
+.sidebar {
+  background-color: #f9a02b;
+  height: 100vh;
+  width: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.mask {
+  height: 150px;
+  bottom: 0;
+  left: 5px;
+}
+.corona {
+  height: 120px;
+  top: 0;
+  left: 20px;
+}

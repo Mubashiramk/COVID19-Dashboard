@@ -1,6 +1,6 @@
 import SUMMARY_DATA from "../Mocks/summary.json";
 
-const getSummary = () => {
+function Summary() {
   return SUMMARY_DATA;
-};
-export default getSummary;
+}
+export default Summary;

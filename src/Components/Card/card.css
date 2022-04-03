@@ -1,14 +1,42 @@
 .card {
-  background-color: rgb(107, 161, 207);
-  border-radius: 10px;
-  width: 150px;
-  height: 150px;
+  background-color: #fefefe;
+  border-radius: 16px;
+  width: 19vw;
+  height: auto;
   box-sizing: 0 0 10px 0 #eee;
-  padding: 15px 0 10px 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 10px 18px #e1dcdc;
+  padding: 20px;
 }
 .cardBox {
   display: flex;
-  flex-direction: row;
-  width: 1000px;
+  flex-direction: column;
+  width: auto;
   justify-content: space-between;
+  padding: 0 0px 0 30px;
+}
+.top-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#second-card {
+  background-color: #f9a02b;
+  color: #fefefe;
+}
+#first-card h2 {
+  color: #0855e8;
+}
+#third-card h2 {
+  color: #55d7dd;
+}
+#fourth-card h2 {
+  color: #fc6836;
 }

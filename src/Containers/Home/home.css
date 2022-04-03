@@ -1,0 +1,20 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  width: auto;
+  background-color: #fff8ee;
+  position: relative;
+  text-align: center;
+  justify-content: space-between;
+}
+.sidebar {
+  width: 15%;
+}
+.dashboard {
+  margin: 0 auto;
+}
+h1 {
+  position: absolute;
+  left: 17%;
+}
