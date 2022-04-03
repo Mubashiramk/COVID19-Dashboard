@@ -69,6 +69,9 @@ const Dashboard = () => {
 
   return (
     <div className="dashBoard">
+      <div className="first">
+        <h1>COVID-19 Tracker</h1>
+      </div>
       <div className="top-div">
         <MainChart />
         <Card

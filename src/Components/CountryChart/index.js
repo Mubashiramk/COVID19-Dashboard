@@ -60,6 +60,7 @@ function CountryChart(props) {
                   label: "",
                   data: [confirmed, deaths, recovered],
                   backgroundColor: ["#fd9f25", "#fa6738", "#53d5e2"],
+
                   borderWidth: 0.5,
                 },
               ],
